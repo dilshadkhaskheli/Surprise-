@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special for Alishba</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      overflow: hidden;
+    }.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  z-index: 10;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #ff6b81;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4757;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4757;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Falling hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: red;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="container" id="puzzleBox">
+    <h2>Hi Alishba ❤️</h2>
+    <p>Answer this to unlock a surprise:</p>
+    <p><b>What is your favorite color?</b></p>
+    <input type="text" id="answer" placeholder="Type your answer...">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="feedback"></p>
+  </div>  <div class="container hidden" id="messageBox">
+    <h1 class="message">💖 Alishba, <!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special for Alishba</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      overflow: hidden;
+    }.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  z-index: 10;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #ff6b81;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4757;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4757;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Falling hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: red;
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="container" id="puzzleBox">
+    <h2>Hi Alishba ❤️</h2>
+    <p>Answer this to unlock a surprise:</p>
+    <p><b>What is your favorite color?</b></p>
+    <input type="text" id="answer" placeholder="Type your answer...">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="feedback"></p>
+  </div>  <div class="container hidden" id="messageBox">
+    <h1 class="message">💖 Alishba, I'm Really Sorry 💖</h1>
+    <p style="font-size:18px;">Please maan jao... Tum meri khushi ho ❤️</p>
+  </div>  <script>
+    function checkAnswer() {
+      let ans = document.getElementById('answer').value.toLowerCase().trim();
+      if(ans === "pink" || ans === "red") { // <-- yahan tum apna puzzle answer set kar sakte ho
+        document.getElementById('puzzleBox').classList.add('hidden');
+        document.getElementById('messageBox').classList.remove('hidden');
+        startHearts();
+      } else {
+        document.getElementById('feedback').innerText = "Nahi Alishba 😅, try again!";
+      }
+    }
+
+    function startHearts() {
+      setInterval(() => {
+        let heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerText = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (2 + Math.random() * 3) + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => {heart.remove();}, 5000);
+      }, 300);
+    }
+  </script></body>
+</html>'m Really Sorry 💖</h1>
+    <p style="font-size:18px;">Please maan jao... Tum meri jaan ho Alishba  ❤️</p>
+  </div>  <script>
+    function checkAnswer() {
+      let ans = document.getElementById('answer').value.toLowerCase().trim();
+      if(ans === "black" || ans === "black") { // <-- yahan tum apna puzzle answer set kar sakte ho
+        document.getElementById('puzzleBox').classList.add('hidden');
+        document.getElementById('messageBox').classList.remove('hidden');
+        startHearts();
+      } else {
+        document.getElementById('feedback').innerText = "Nahi Alishba 😅, try again!";
+      }
+    }
+
+    function startHearts() {
+      setInterval(() => {
+        let heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerText = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (2 + Math.random() * 3) + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => {heart.remove();}, 5000);
+      }, 300);
+    }
+  </script></body>
+</html>
